@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="outer-box">
+        <div class="inner-box">
+            <header class="signup-header">
+                <h1>Sign Up</h1>
+                <p>It takes less than 30 seconds !</p>
+            </header>
+            <main class="signup-body">
+                <form action="#">
+                    <p>
+                        <label for="fullName">Your Name </label>
+                        <input type="text" name="fullName" id="fullName" placeholder="Enter your full Name" >
+                    </p>
+                    <p>
+                        <label for="email">Your Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" >
+                    </p>
+                    <p>
+                        <label for="city">Phone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone" >
+                    </p>
+                    <div class="password-container">
+                        <p>
+                            <label for="city">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Enter password" >
+                            <span class="show-hide" id="btn-1">Show</span>
+
+                        </p>
+                    </div>
+                    <div class="password-container">
+                        <p>
+                            <label for="city">Confirm Password</label>
+                            <input type="password" name="confirm_password" id="confirm_password"
+                                placeholder="Confirm password" >
+                            <span class="show-hide" id="btn-2">Show</span>
+                        </p>
+                    </div>
+
+                    <p>
+                        <input type="submit" id="submit" value="Create Account">
+                    </p>
+                </form>
+            </main>
+            <footer class="signup-footer">
+                <p>
+                    Already have an account ? <a href="login.html">Login</a>
+                </p>
+            </footer>
+        </div>
+
+        <div class="circle c1">
+
+        </div>
+        <div class="circle c2">
+        </div>
+    </div>
+
+    <dialog>
+        <div class="modal">
+             <img src="check_mark.png" alt="check-mark" class="check-mark">
+             <img src="cross-mark.jpg" alt="cross-mark" class="cross-mark">
+             <h3>Signed up successfully!</h3>
+        </div>
+    </dialog>
+
+
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/39072a40ab.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
