@@ -133,9 +133,11 @@ body{
 
 dialog{
     position: absolute;
-    margin: auto;
+    top: 30%;
+    left: 34.5%;
     border: 2px solid #b1b1b1cc ;
-    opacity: 0.9;
+    border-radius: 15px;
+    z-index: 2;
 }
 
 
@@ -156,15 +158,16 @@ dialog::backdrop{
 }
 
 .modal .cross-mark{
-    height: 40px;
-    width: 40px;
+    height: 25px;
+    width: 25px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 5px;
+    right: 5px;
 }
 
 .modal .cross-mark:active{
     border: 2px solid red;
+    border-radius: 20px;
 }
 
 .modal .cross-mark:hover{

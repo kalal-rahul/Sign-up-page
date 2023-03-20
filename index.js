@@ -25,12 +25,19 @@ showBtnOne.addEventListener("click", handleClick);
 
 
 // Handle Modal
+const formElem = document.getElementById("form");
+formElem.addEventListener("submit", (e) => {
+    e.preventDefault();
+} )
+
+
+
 const signUpBtn = document.getElementById("submit");
 signUpBtn.addEventListener("click", () => {
-    document.querySelector("dialog").showModal();
+    document.getElementsByTagName("dialog")[0].showModal();
 })
 
 const closeBtn = document.getElementsByClassName("cross-mark")[0];
 closeBtn.addEventListener("click", () => {
-    document.querySelector("dialog").close();
+    document.getElementsByTagName("dialog")[0].close();
 })
